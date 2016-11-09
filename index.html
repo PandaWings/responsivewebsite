@@ -5,8 +5,30 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
+    
+    <!-- TODO - remove this -->
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+	<script>
+		//Choose if you want the window width to display - 1 = yes, 0 = no
+		var showWidth = 1;
+		
+		if(showWidth == 1){
+        	$(document).ready(function (){
+            	$(window).resize(function(){
+                	var width = $(window).width();
+                	document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
+           		});
+        	});
+		}
+    </script>
+    
 </head>
 <body>
+ <div class="fixedHeader">
+    <div id="output_width"></div><!--Widow width inserted here-->
+ </div>
+ 
     <div class="wrapper">
         <header class="masthead" role="banner">
             <h1>Richard Nguyen</h1>
@@ -23,19 +45,19 @@
         </nav>
         <main class="main">
             <section class="col first">
-                <h2>Put Heading Here</h2>
-                <p><img src="" alt="Description of the image. Change this text..." /> Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
+                <h2>Conquering the Internet with Cats</h2>
+                <p><img src="http://placekitten.com/320/240" alt="Description of the image. Change this text..." />Meow blegh blegh vomit my furball really tie the room together meow meow, i tell my human pelt around the house and up and down stairs chasing phantoms. </p>
+                <p>Rub face on everything with tail in the air poop in the plant pot eat grass, throw it back up and mark territory. Kitty scratches couch bad kitty knock over christmas tree drink water out of the faucet. </p>
+                <p>Intently sniff hand make muffins kitten is playing with dead mouse hide from vacuum cleaner or poop in litter box, scratch the walls. Human give me attention meow kitty scratches couch bad kitty. Hide at bottom of staircase to trip human mark territory, but meow to be let out cat slap dog in face use lap as chair. </p>
+                <p>Hide head under blanket so no one can see vommit food and eat it again poop in litter box, scratch the walls slap owner's face at 5am until human fills food dish. Poop on grasses climb a tree, wait for a fireman jump to fireman then scratch his face refuse to leave cardboard box and pooping rainbow while flying in a toasted bread costume in space. </p>
+                <p>Intently stare at the same spot stare at wall turn and meow stare at wall some more meow again continue staring rub face on owner mark territory, and make meme, make cute face. Use lap as chair meow for food, then when human fills food dish, take a few bites of food and continue meowing or jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed so chase dog then run away. Knock over christmas tree kitty loves pigs. </p>
             </section>
-            <section class="col first">
-                <h2>Put Heading Here</h2>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
-                <p>Add lorem ipsum here</p>
+            <section class="col second">
+                <h2>5 Habits of Highly Effective Cats</h2>
+                <p>Then cats take over the world paw at beetle and eat it before it gets away. Sit in window and stare ooo, a bird! yum purr for no reason but roll on the floor purring your whiskers off or chase imaginary bugs, cat slap dog in face. Human give me attention meow. Favor packaging over toy lick arm hair but scratch the box, yet kitty scratches couch bad kitty. </p>
+                <p>Scratch at the door then walk away sniff other cat's butt and hang jaw half open thereafter. Immediately regret falling into bathtub attack dog, run away and pretend to be victim stare at ceiling light for sit on the laptop so hunt by meowing loudly at 5am next to human slave food dispenser, cats secretly make all the worlds muffins tuxedo cats always looking dapper. </p>
+                <p>Stretch eat from dog's food chase the pig around the house but mew, refuse to drink water except out of someone's glass so chase the pig around the house why must they do that. Meow loudly just to annoy owners where is my slave? I'm getting hungry walk on car leaving trail of paw prints on hood and windshield. Caticus cuteicus poop in the plant pot or roll on the floor purring your whiskers off curl up and sleep on the freshly laundered towels gnaw the corn cob shake treat bag lick the other cats. </p>
+                <p>Sweet beast. Behind the couch wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again meow vommit food and eat it again so sun bathe. Playing with balls of wool leave hair everywhere, but hate dog. Lick the other cats when in doubt, wash vommit food and eat it again.</p>
             </section>
         </main>
         <footer class="footer" role="contentinfo">

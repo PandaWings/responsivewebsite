@@ -1,0 +1,325 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Lato|Noto+Serif';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Lato", "Tahoma", "Verdana", sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem "Noto Serif", "Georgia", "Times New Roman", serif; 
+}
+h2{
+    font: bold 2.618rem "Noto Serif", "Georgia", "Times New Roman", serif; 
+}
+li, p, a{
+    font: bold 1.618rem "Lato", "Tahoma", "Verdana", sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem "Lato", "Tahoma", "Verdana", sans-serif;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    /* >> Added background image*/
+    background: url("http://placekitten.com/320/240") no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+}
+nav>ul{
+    width: 100%;
+}
+
+
+/*  links - 100% of nav   */
+
+
+
+nav li{
+    width: 100%;
+    list-style: none;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem "Lato", "Tahoma", "Verdana", sans-serif;
+    text-align: center;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+}
+footer{
+    width: 100%;
+}
+
+    /******************************
+       Additions - GLOBAL changes
+    ******************************/
+    h2 {
+        margin-top: 10%;
+        color: darkgreen;
+    }
+    nav {
+        margin-top: 3.5%;
+    }
+    main {
+        /* Centers the columns on page */
+        margin: 0 auto;
+    }
+    main .col p {
+        /*text-align: justify;*/
+        margin-top: 7%;
+    }
+    .first {
+        padding-right: 2%;
+    }
+    .second {
+        padding-left: 2%;
+    }
+    
+
+
+/*  MEDIUM  */
+@media screen and (min-width:600px){
+    
+    h2{
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+    li, p, a{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    wrapper {
+        width: 100%;
+    }
+    header { 
+        width: 100%;
+    }
+    
+    nav {
+        width: 90%;
+    }
+
+        /* Makes the nav bar HORIZONTAL at the top */
+    nav li {
+        float: left;
+        width: 20%;
+    }
+
+    main {
+        width: 90%;
+    }
+    
+    main .col {
+        width: 50%;
+        /* Float:left to make the 2 columns beside each other */
+        float: left;
+    }
+
+    .col img {
+        width: 60%;
+        /* Float:left to make the text go AROUDN the image */
+        float: left;
+        margin-right: 3%;
+    }
+
+    
+    /* Throws the footer onto the next line */
+    footer {
+        padding-top: 5%;
+        width: 90%;
+        clear: left;
+    }
+     
+    /* Keeps contents of footer on 1 line. Alternatively, can do float:left + float:right for each part */
+    footer p, footer ul {
+        /*display: inline;*/
+    }
+    footer ul {
+        list-style: none;
+    }
+    footer li {
+        display: inline;
+        margin-left: 10px;
+    }
+    
+}
+
+/*  LARGE  */
+@media screen and (min-width: 800px){
+
+    h2{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    li, p, a{
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+    
+    header { 
+        width: 100%;
+    }
+    
+    nav {
+        width: 90%;
+    }
+
+    /* Makes the nav bar HORIZONTAL at the top */
+    nav li {
+        float: left;
+        width: 20%;
+    }
+
+    main {
+        width: 90%;
+        /* Centers the columns on page */
+        margin: 0 auto;
+    }
+    
+    main .col {
+        width: 50%;
+        /* Float:left to make the 2 columns beside each other */
+        float: left;
+    }
+
+    .col img {
+        width: 50%;
+        /* Float:left to make the text go AROUDN the image */
+        float: left;
+        margin-right: 3%;
+    }
+
+    /* Throws the footer onto the next line */
+    footer {
+        padding-top: 5%;
+        width: 100%;
+        clear: left;
+    }
+     
+    /* Keeps contents of footer on 1 line. Alternatively, can do float:left + float:right for each part */
+    footer p, footer ul {
+        display: inline-block;
+    }
+    footer ul {
+        list-style: none;
+    }
+    footer li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+}
+
+/*  EXTRA LARGE  */
+@media screen and (min-width: 1200px){
+    
+    h2{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    li, p, a{
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+    
+    header { 
+        width: 100%;
+    }
+    
+    nav, main {
+        display: inline;
+        float: left;
+    }
+
+    nav {
+        width: 30%;
+    }
+    
+    nav li {
+        width: 100%;
+    }
+
+    main {
+        width: 70%;
+    }
+    
+    main .col {
+        width: 50%;
+        float: left;
+    }
+
+    .col img {
+        width: 55%;
+        float: left;
+    }
+
+    footer {
+        padding-top: 5%;
+        width: 100%;
+        clear: both;
+    }
+    
+    footer p, footer ul {
+        display: inline-block;
+    }
+    
+    footer ul {
+        list-style: none;
+    }
+    
+    footer li {
+        display: inline-block;
+        margin-left: 40px;
+    }
+}
