@@ -4,7 +4,7 @@ Droid Serif --> Changed to Noto Serif
 Droid Sans --> Changed to Lato
 Droid Sans Mono --> Changed to Lato
 
-Font Scaling
+(Original) Font Scaling
 6.854rem
 4.236rem
 2.618rem
@@ -104,7 +104,7 @@ footer{
        Additions - GLOBAL changes
     ******************************/
     h2 {
-        margin-top: 10%;
+        margin-top: 4%;
         color: darkgreen;
     }
     nav {
@@ -165,7 +165,7 @@ footer{
         width: 90%;
     }
 
-        /* Makes the nav bar HORIZONTAL at the top */
+    /* Makes the nav bar HORIZONTAL at the top */
     nav li {
         float: left;
         width: 20%;
@@ -196,10 +196,6 @@ footer{
         clear: left;
     }
      
-    /* Keeps contents of footer on 1 line. Alternatively, can do float:left + float:right for each part */
-    footer p, footer ul {
-        /*display: inline;*/
-    }
     footer ul {
         list-style: none;
     }
