@@ -1,8 +1,8 @@
 /**************************************************
 Fonts
-Droid Serif
-Droid Sans
-Droid Sans Mono
+Droid Serif --> Changed to Noto Serif
+Droid Sans --> Changed to Lato
+Droid Sans Mono --> Changed to Lato
 
 Font Scaling
 6.854rem
@@ -108,7 +108,10 @@ footer{
         color: darkgreen;
     }
     nav {
-        margin-top: 3.5%;
+        padding-top: 1%;
+    }
+    nav a {
+        padding: 2% 0;
     }
     nav a:active,
     nav a:focus,
@@ -116,13 +119,15 @@ footer{
         color: #3B687F;
         font-style: italic;
         text-decoration:none;
+        
+        background: #efeadd;
+        border-radius: 10px;
     }
     main {
         /* Centers the columns on page */
         margin: 0 auto;
     }
     main .col p {
-        /*text-align: justify;*/
         margin-top: 7%;
     }
     .first {
