@@ -163,6 +163,8 @@ footer{
     
     nav {
         width: 90%;
+        /* Also makes nav bar CENTERED on page */
+        margin: 0 auto;
     }
 
     /* Makes the nav bar HORIZONTAL at the top */
@@ -225,6 +227,8 @@ footer{
     
     nav {
         width: 90%;
+        /* Also makes nav bar CENTERED on page */
+        margin: 0 auto;
     }
 
     /* Makes the nav bar HORIZONTAL at the top */
@@ -298,6 +302,7 @@ footer{
 
     nav {
         width: 30%;
+        padding-right: 2%;
     }
     
     nav li {
